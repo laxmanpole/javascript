@@ -4,7 +4,7 @@
  *@file:Payment.js
  *@auther: Laxman Pole
  *@verison: 1.0.0
- *@since: 29/02/2019
+ *@since: 02/02/2019
  *********************************************************************************************/
 var u = require('./Utility');
 var rl = require('readline-sync');

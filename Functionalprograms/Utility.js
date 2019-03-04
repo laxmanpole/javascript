@@ -10,7 +10,7 @@ module.exports = {
     /*******************Leapyear********************************************************/
     leapYear(year) {
         var result;
-        if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
+        if (((year % 4 == 0) && (year % 100 !== 0)) || (year % 400 == 0)) {
             result = true;
         } else {
             result = false;
@@ -222,6 +222,7 @@ module.exports = {
         var stop = new Date().getTime();
         return stop;
     },
+    /***********************************Array created**************************************************/
     array2d(rows, cols) {
 
         var array = [];

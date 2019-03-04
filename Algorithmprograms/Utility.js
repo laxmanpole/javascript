@@ -54,6 +54,7 @@ module.exports = {
                     }
                 }
                 return true;
+
             }
         }
     },
@@ -65,6 +66,7 @@ module.exports = {
         num2 = num2 + "";
         for (let i = 0; i < num1.length; i++) {
             str = num1.charAt(i) + str;
+
         }
         if (str == num2) {
             return true;
@@ -109,12 +111,12 @@ module.exports = {
     bubblesortInt(arr, length) {
         var temp = 0;
         for (var i = 0; i < length; i++) {
-            for (var j = i + 1; j < length - i; j++) {
-                if (arr[j - 1] > arr[j]) {
+            for (var j = 0; j < length - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
                     //swap elements  
-                    temp = arr[j - 1];
-                    arr[j - 1] = arr[j];
-                    arr[j] = temp;
+                    temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
 
             }
@@ -297,6 +299,7 @@ module.exports = {
         var s = " ";
         console.log(bin);
         var j = bin.length - 1;
+        console.log(j);
         for (let i = 0; i < bin.length; i++) {
             var res = Math.floor(Math.pow(2, j));
 
