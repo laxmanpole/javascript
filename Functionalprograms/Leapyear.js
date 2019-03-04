@@ -13,8 +13,8 @@ var u = require('./Utility');
 var rl = require('readline-sync');
 
 
-var n = rl.question("Enter the year:");
-var result = u.leapYear(n);
+var year = rl.question("Enter the year:");
+var result = u.leapYear(year);
 if (result == true) {
     console.log("it is leap year");
 } else {

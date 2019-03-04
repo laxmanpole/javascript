@@ -11,7 +11,7 @@ var rl = require('readline-sync');
 var file = require('fs');
 var f = file.readFileSync('./file.txt', 'utf8');
 var arr = f.split(',');
-var word = rl.question("Enter the word you want search:");
+var word = rl.question("Enter the word you want to search:");
 if (arr.includes(word)) {
     console.log("Is there");
 } else {

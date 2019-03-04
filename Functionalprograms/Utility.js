@@ -1,6 +1,5 @@
 var u = require('./Utility');
 var rl = require('readline-sync');
-
 module.exports = {
     /********************Replace String*************************************************/
     replace(str1, str2, str3) {
@@ -75,7 +74,8 @@ module.exports = {
     },
     /*********************Prime Factorization************************************************ */
     primefactor(num) {
-        for (var i = 2; i < num; i++) {
+        console.log("Prime Factor is:");
+        for (let i = 2; i < num; i++) {
             while (num % i == 0) {
                 console.log(i + " ");
                 num = num / i;
@@ -204,7 +204,7 @@ module.exports = {
         var Start, Stop, Elapsed;
         var Sum = 0;
         Start = u.StartTime();
-        for (var i = 1; i <= num; i++) {
+        for (let i = 1; i <= num; i++) {
             Sum = Sum + i;
             console.log("Sum: " + Sum + " ");
         }
@@ -226,7 +226,7 @@ module.exports = {
 
         var array = [];
 
-        for (var i = 0; i < rows; i++) {
+        for (let i = 0; i < rows; i++) {
             array[i] = [];
 
             for (var j = 0; j < cols; j++) {
@@ -250,15 +250,13 @@ module.exports = {
             var arr = Array[i];
             console.log(arr + "\t");
         }
-        //System.out.println("");
+
 
         // COMPUTATION
-        for (var i = 0; i < arr.length - 2; i++) {
-            for (var j = i + 1; j < arr.length - 1; j++) {
-                for (var k = j + 1; k < arr.length; k++) {
-                    // var a = arr[i];
-                    //var b = arr[j];
-                    //var c = arr[k];
+        for (let i = 0; i < arr.length - 2; i++) {
+            for (let j = i + 1; j < arr.length - 1; j++) {
+                for (let k = j + 1; k < arr.length; k++) {
+
                     if (arr[i] + arr[j] + arr[k] == 0) {
                         Count++;
                         console.log("Triplet is: " + " " + arr[i] + " " + arr[j] + " " + arr[k]);

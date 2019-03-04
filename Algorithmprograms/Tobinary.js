@@ -2,7 +2,7 @@
  * Execution: defult node         cmd>node Tobinary.js 
  * @purpose:outputs the binary (base 2) representation of the decimal number typed as the input.
  * @overview:It is based on decomposing the number into a sum of powers of 2.
- * *@file:Tobinary.js 
+ * @file:Tobinary.js 
  * @auther: Laxman Pole
  * @verison: 1.0.0
  * @since: 29/02/2019
