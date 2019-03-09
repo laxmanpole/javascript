@@ -14,10 +14,13 @@ var rl = require('readline-sync');
 var num = rl.question("Enter the no:");
 
 function primenum(num) {
+    var k = 0;
+    var prime = [];
     for (let i = 2; i <= num; i++) {
         var res = u.primenumber(i);
         if (res) {
             console.log(i);
+
         }
     }
 }

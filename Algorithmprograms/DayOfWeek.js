@@ -16,7 +16,7 @@ function dayOfWeek() {
     var y = rl.question("Enter a year:")
     var num = u.dayOfWeek(d, m, y);
     var res = ["Sunday", "Monday", "Tuesday", "Wendsday", "Thursday", "Friday", "saturday"];
-    if (num <= res.length) {
+    if (num < res.length) {
         console.log("The day falls on :" + res[num]);
     } else {
         console.log("Invalid day ");

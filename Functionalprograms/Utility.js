@@ -148,29 +148,33 @@ module.exports = {
         console.log("distance from (" + x + ", " + y + ") to (0, 0) = " + dist);
     },
     /***********************Gambler******************************************************* */
-    gambler(stake, goal, number) {
-        var win = 0,
-            loss = 0;
-        for (let i = 0; i <= goal; i++) {
-            while (stake > 0 && stake < number && goal > 0) {
+    gambler(stake, goal, trials) {
+        var bets = 0; // total number of bets made
+        var wins = 0; // total number of games won
+
+        // repeat trials times
+        for (let t = 0; t < trials; t++) {
+
+            // do one gambler's ruin simulation
+            var cash = stake;
+            while (cash > 0 && cash < goal) {
+                bets++;
                 if (Math.random() < 0.5) {
-                    stake++;
-                    win++;
-                    goal--;
+                    cash++; // win $1
                 } else {
-                    stake--;
-                    loss++;
-                    goal--;
+                    cash--; // lose $1
                 }
             }
+            if (cash == goal) {
+                wins++; // did gambler go achieve desired goal?
+            }
         }
-        var perwin = (win * 100) / (win + loss)
-        var perloss = (loss * 100) / (win + loss);
 
-        console.log("The gambler is won : " + win);
-        console.log("The gambler is loss : " + loss);
-        console.log("Win percentage is : " + perwin + " %");
-        console.log("Loss percentage is : " + perloss + " %");
+        // print results
+        console.log(wins + " wins of " + trials);
+        console.log("Percent of games won = " + 100.0 * wins / trials);
+        console.log("Avg # bets           = " + 1.0 * bets / trials);
+
     },
     /****************************Coupen*************************************************** */
     generatecoupon(number) {
