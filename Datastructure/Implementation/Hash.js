@@ -48,8 +48,29 @@ class Hashtable {
 
         }
     }
+    search(num) {
+        for (let index = 0; index < 10; index++) {
+            show.print(index + " : ");
+            try {
+                var check = this.array[index].search(num);
+                if (check) {
+                    this.array[index].remove(num);
+                    this.array[index].printListU();
+                } else {
+                    var index1 = this.hash(num);
+                    this.array[index1].add(num);
+                    this.array[index].printListU();
+                }
+
+            } catch (err) {
+                console.log("NO element");
+            }
+
+        }
+    }
 }
 module.exports = {
     Hashtable
+
 
 }

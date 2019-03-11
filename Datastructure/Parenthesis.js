@@ -19,7 +19,7 @@ function Evaluation(exp) {
 
         if (ch == '(' && ch == '{' && ch == '[') {
             stack.push(ch);
-            console.log(stack);
+            //console.log(stack);
 
         } else {
             switch (ch) {

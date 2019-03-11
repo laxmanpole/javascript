@@ -1,3 +1,13 @@
+/**********************************************************************************************
+ * Execution:defult node        cmd>node Hashfunction.js
+ * @purpose:Hashing Function to search a Number in a slot.
+ 
+ * @file:.Hashfunction.js
+ * @author: Laxman Pole
+ * @verison: 1.0.0
+ * @since: 09/03/2019
+ ***********************************************************************************************/
+
 u = require('./Utility');
 const rl = require('readline-sync');
 const hash = require('./Implementation/Hash');
@@ -18,6 +28,8 @@ function hashstore() {
             hs.addhash(arr[index]);
         }
         hs.print();
+        var num = rl.questionInt("Enter a number u want to search:");
+        hs.search(num);
     } catch (err) {
         console.log("ERROR :" + err);
 

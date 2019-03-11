@@ -14,8 +14,8 @@ class Node {
 
 class StackLinkedList {
     constructor(element) {
-        this.size = 0;
         this.head = null;
+        this.size = 0;
 
     }
 

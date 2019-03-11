@@ -45,10 +45,10 @@ function calenderstack() {
             console.log();
 
             //Push weekDays in the stack
-            for (let i = 1; i < weekDays.length; i++) {
+            for (let i = weekDays.length - 1; i > 1; i--) {
                 dayStack.push(weekDays[i]);
             }
-            dayStack = dayStack.reverseStack();
+
             for (let i = 1; i < weekDays.length; i++) {
                 dayStack.pop(weekDays[i]);
             }

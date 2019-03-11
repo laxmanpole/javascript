@@ -45,7 +45,7 @@ function calender() {
 
             for (var i = 1; i <= dates[month]; i++) {
                 if (i < 10) {
-                    req.print(" " + i + "   ");
+                    req.print("0" + i + "   ");
                 }
 
                 if (i > 9) {
