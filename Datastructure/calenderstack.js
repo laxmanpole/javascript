@@ -43,9 +43,12 @@ function calenderstack() {
             var dateStack = new l.StackLinkedList();
             req.print(months[month] + "  " + year);
             console.log();
+            for (let i = 1; i < weekDays.length; i++) {
+                req.print(weekDays[i] + "  ");
+            }
 
             //Push weekDays in the stack
-            for (let i = weekDays.length - 1; i > 1; i--) {
+            for (let i = weekDays.length - 1; i >= 1; i--) {
                 dayStack.push(weekDays[i]);
             }
 

@@ -331,7 +331,7 @@ class LinkedList {
 
                     if (prev == null) {
 
-                        this.head = current.next;
+                        this.first = current.next;
 
                     } else {
 
@@ -377,13 +377,13 @@ class LinkedList {
 
             while (temp.next !== null) {
 
-                if ((temp.data) > (temp.next.data)) {
+                if (parseInt(temp.data) > parseInt(temp.next.data)) {
 
-                    var t = temp.data;
+                    var t = parseInt(temp.data);
 
-                    temp.data = temp.next.data;
+                    temp.data = parseInt(temp.next.data);
 
-                    temp.next.data = t;
+                    temp.next.data = parseInt(t);
 
                 }
 

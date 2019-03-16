@@ -17,7 +17,7 @@ var ll = require('./Implementation/Linkedlist')
 try {
     var linklist = new ll.LinkedList();
     var data;
-    data = u.fileCall('size.txt');
+    data = u.fileCall('file.txt');
 
     for (let index = 0; index < data.length; index++) {
         linklist.add(data[index]);
@@ -39,7 +39,7 @@ try {
     var d = linklist.display();
     console.log(d);
 
-    u.writeFile('size.txt', d)
+    u.writeFile('file.txt', d)
 } catch (err) {
     console.error(err);
 }

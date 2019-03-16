@@ -1,0 +1,36 @@
+{
+    "Rice": [{
+            "Name": "Basmati Rice",
+            "Weight": 1,
+            "Price": 60
+
+        },
+        {
+            "Name": "Polished Rice ",
+            "Weight": 1,
+            "Price": 65
+        }
+    ],
+    "Wheats": [{
+            "Name": "Common wheat",
+            "Weight": 1,
+            "Price": 25
+        },
+        {
+            "Name": "Spelt wheat",
+            "Weight": 1,
+            "Price": 27
+        }
+    ],
+    "Pulses": [{
+            "Name": "Mung Bean",
+            "Weight": 1,
+            "Price": 50
+        },
+        {
+            "Name": "Yellow Pigeon Peas",
+            "Weight": 1,
+            "Price": 65
+        }
+    ]
+}

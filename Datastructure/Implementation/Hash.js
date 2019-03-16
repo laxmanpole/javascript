@@ -55,11 +55,11 @@ class Hashtable {
                 var check = this.array[index].search(num);
                 if (check) {
                     this.array[index].remove(num);
-                    this.array[index].printListU();
+                    console.log(this.array[index].printListU());
                 } else {
                     var index1 = this.hash(num);
                     this.array[index1].add(num);
-                    this.array[index].printListU();
+                    console.log(this.array[index].printListU());
                 }
 
             } catch (err) {

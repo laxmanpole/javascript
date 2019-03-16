@@ -10,7 +10,7 @@
 var u = require('./Utility');
 var rl = require('readline-sync');
 var l = require('./Implementation/Deque')
-var deque = new l.Deque();
+    //var deque = new l.Deque();
 
 function palindromeChecker() {
     var deque = new l.Deque;

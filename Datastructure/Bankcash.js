@@ -26,14 +26,14 @@ try {
     for (let i = 0; i < num; i++) {
         console.log("Welcome:)" + queue.dequeue());
 
-        var choice = rl.question("Enter 1. for deposit & 2.for withdraw:");
+        var choice = rl.questionInt("Enter 1. for deposit & 2.for withdraw:");
         switch (choice) {
-            case '1':
+            case 1:
                 var deposit = rl.questionInt("Enter a Deposit amount:");
                 Totalbalance += deposit;
                 console.log("Your amount deposit successfully ,& your amount is" + Totalbalance);
                 break;
-            case '2':
+            case 2:
                 var withdraw = rl.questionInt("Enter a withdraw amount:");
                 if (withdraw > Totalbalance) {
                     console.log("Insufficient balance,Enter new amount:");
